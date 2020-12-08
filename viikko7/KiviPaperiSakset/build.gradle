@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:20.0'
+    testCompile 'junit:junit:4.12'
+}
+
+mainClassName = 'ohtu.kivipaperisakset.Paaohjelma'
+
+
+run {
+    standardInput = System.in
+}
